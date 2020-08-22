@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Hulu's default color: #2DBD9D;    */
+
+body {
+    color: white;
+    font-family: Helvetia, Arial, sans-serif;
+    font-size: 1rem;
+}
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    background-image: url("https://www.hulu.com/static/hitch/s3/2020-06/Homepage_Masthead_Test_DESKTOP_3200x1320-v4c_6.16.20.jpg");
+}
+
+p {
+    line-height: 1.5;
+}
+
+/* pesky login button in right-hand corder */
+nav {
+    align-self: flex-end;
+}
+nav p { 
+    text-transform: uppercase;
+    padding: 2vh;
+    margin: 2vh;
+    border-radius: 10px;
+    font-weight: 700;
+    color: white;
+}
+
+
+/* First View  */
+.masthead-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 55vh;
+}
+.preheadline {
+    color: #2DBD9D; 
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: .75rem;
+    margin-bottom: 2vh;
+}
+.masthead-container img {
+    height: 10vh;
+    /* border: 1px solid white; */
+    padding: 5vh 5vh; 
+}
+.subheadline {
+    font-weight: 900;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    max-width: 70vh;
+    text-align: center;
+}
+.secondary-message {
+    font-size: .9rem;
+    padding-bottom: 2vh;
+}
+
+.start-trial {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px 20px;
+    margin: 20px 20px;
+    text-transform: uppercase;
+}
+.start-trial p {
+    font-weight: 900;
+    color: black;
+}
+.legal {
+    /* border: 2px white solid;
+    padding-bottom: 20px; */
+    margin-bottom: 20px;
+    font-size: .5rem;
+}
+/* This builds the SALES FUNCTION bar */
+
+.ribbon{
+    background: linear-gradient(270deg,#0F495C 0%,#0D3640 49.72%,#08141F 100%);;
+    width: 100%;
+}
+.ribbon-contents{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin: 5vh;
+    /* border: 1px white solid; */
+}
+/* .ribbon-contents * {
+    border: 1px solid white;
+} */
+
+/* This is the manages the content of the ribbom */
+
+.sales-function {
+    flex-grow: 4;
+    padding: 0vh 10vh;
+    align-self: stretch;
+}
+.logos img{
+    max-width: 30vw;
+    max-height: 10vh;
+}
+
+
+#discount {
+    margin-top: 5px;
+    font-size: .9rem;
+    font-weight: 900;
+    color: #2DBD9D; 
+}
+#money-grab {
+    font-size: 1.65rem;
+}
+#fine-print {
+    font-size: .5rem;
+    color: whitesmoke;
+    /* max-width: 5vh; */
+}
+#fine-print a{ 
+    color: whitesmoke;
+    text-decoration-line: underline;
+}
+
+#CTA {
+    padding: 20px 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+#CTA a {
+    color: rgb(228, 226, 226);
+}
+
+/* This is the SECOND vh section */
+.content-grid img {
+    max-width: 100%;
+}
+
+/* this is the THIRD vh */
+.plans {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    height: 200vh;
+}
+/* Something I discovered formatting this table was tha the CSS specs don't allow you to target a table or tr property and make them sticky.*/
+
+table {
+    border-collapse: collapse;
+    width: 80vw;
+    /* padding-top: 50px;
+    margin-top: 50px; */
+}
+col:nth-child(3) {
+    /* background-color: rgb(228, 226, 226) */
+    background-color: #F7F8FA;
+}
+th {
+    position: sticky;
+    top: 0; /* required for the stickiness */
+    background-color: white;
+}
+
+th h4 {
+    font-size: 2rem;
+    text-align: left;
+}
+
+th:nth-child(1) p {
+    text-align: left;
+}
+
+th, td {
+    padding: 3vh;  
+    border-bottom: 1px solid rgb(129, 129, 129);
+}
+
+table > tbody > tr > td > p {
+    text-align: center;
+}
+table > thead > tr > th:nth-child(3) {
+    /* background-color: rgb(228, 226, 226) */
+    background-color: #F7F8FA;
+}
+table > thead > tr > th > a > p {
+    margin: 1vh;
+    background-color: black;
+    color: white;
+    line-height: 2rem;
+}
+
+table > thead > tr > th > a > p:hover {
+    margin: 1vh;
+    border-radius: 5px grey solid;
+    background-color: grey;
+    color: white;
+}
+
+/*Final Detail Check */
+
+a:link {
+    text-decoration: none;
+  }
+  
+a:visited {
+    text-decoration: none;
+}
+
+nav p:hover{
+    color: rgb(133, 133, 133);
+}
+.start-trial:hover {
+    background-color: rgb(133, 133, 133);
+}
+#fine-print {
+    margin-top: 5px;
+    font-size: .85rem;
+}
+.terms a {
+    justify-content: center;
+}
+
+
